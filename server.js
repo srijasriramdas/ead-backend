@@ -21,7 +21,7 @@ function safeDbLabel(uri) {
   }
 }
 
-mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect("mongodb+srv://sriramdassrija_db_user:Srija%242005@cluster0.y8dqygu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('✅ MongoDB connected to', safeDbLabel(MONGODB_URI)))
   .catch(err => {
     console.error('❌ MongoDB connection error:', err);
